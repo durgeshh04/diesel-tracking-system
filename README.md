@@ -12,9 +12,11 @@ The backend is implemented using **NestJS** and is responsible for:
 
 ## Repository Structure
 
+```mermaid
 backend/
 ├── README.md → High-level project overview (this file)
 └── server/ → NestJS backend application
+```
 
 ---
 
