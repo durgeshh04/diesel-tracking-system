@@ -6,6 +6,7 @@ import {
   IsString,
   IsOptional,
   IsDateString,
+  Min,
 } from 'class-validator';
 
 /**
@@ -19,7 +20,7 @@ export class CreateZohoDto {
 
   /** quantity */
   @IsNumber({ maxDecimalPlaces: 2 })
-  @IsPositive()
+  @Min(0.01, { message: 'Quantity must be greater than zero' })
   quantity: number;
 
   /** siteName */
