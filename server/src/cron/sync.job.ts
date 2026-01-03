@@ -17,7 +17,7 @@ export class SyncJob {
    * This is method which actually updates the diesel pending data
    */
 
-  @Cron('*/5 * * * *')
+  @Cron('*/2 * * * *')
   async syncPendingEntries() {
     const pending = await this.dieselService.findPending();
 
